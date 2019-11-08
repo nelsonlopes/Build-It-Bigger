@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import com.nelsonlopes.javajokes.Joker;
-import com.nelsonlopes.jokesdisplayer.
+import com.nelsonlopes.jokesdisplayer.JokesDisplayer;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         Joker joker = new Joker();
         String joke = joker.getJoke();
 
-        Intent intent = new Intent(this, )
-        Toast.makeText(this, joke, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, JokesDisplayer.class);
+        intent.putExtra(getString(R.string.intent_joke), joke);
+        startActivity(intent);
     }
 }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">JokesDisplayer</string>
+
+    <!-- for passing the joke in the Intent -->
+    <string name="intent_joke">intent_joke</string>
+
+    <string name="error_message">Joke data not available.</string>
 </resources>
