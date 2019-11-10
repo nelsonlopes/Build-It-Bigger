@@ -43,7 +43,6 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
             myApiService = builder.build();
         }
 
-
         try {
             return myApiService.putJoke(new MyBean()).execute().getJoke();
         } catch (IOException e) {
@@ -53,8 +52,8 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
 
     @Override
     protected void onPostExecute(String result) {
-        Intent intent = new Intent(this.context, JokesDisplayer.class);
+        Intent intent = new Intent(context, JokesDisplayer.class);
         intent.putExtra(this.context.getString(R.string.intent_joke), result);
-        this.context.startActivity(intent);
+        context.startActivity(intent);
     }
 }
