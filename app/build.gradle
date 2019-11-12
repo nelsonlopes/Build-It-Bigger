@@ -13,6 +13,7 @@ buildscript {
 android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
+    flavorDimensions "default"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -29,6 +30,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        free {
+            applicationId = "com.udacity.gradle.builditbigger.free"
+            dimension "default"
+        }
+        paid {
+            applicationId = "com.udacity.gradle.builditbigger.paid"
+            dimension "default"
         }
     }
 }
