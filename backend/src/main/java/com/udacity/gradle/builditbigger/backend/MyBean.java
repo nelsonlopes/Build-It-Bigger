@@ -5,13 +5,13 @@ import com.nelsonlopes.javajokes.Joker;
 /** The object model for the data we are sending through endpoints */
 public class MyBean {
 
-    private Joker joker;
+    private String myData;
 
-    public MyBean() {
-        joker = new Joker();
+    public String getData() {
+        return myData;
     }
 
-    public String getJoke() {
-        return joker.getJoke();
+    public void setData(String data) {
+        myData = data;
     }
 }

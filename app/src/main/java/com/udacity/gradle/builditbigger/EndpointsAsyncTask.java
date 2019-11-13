@@ -11,7 +11,7 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.nelsonlopes.jokesdisplayer.JokesDisplayer;
 import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
-import com.udacity.gradle.builditbigger.backend.myApi.model.MyBean;
+
 
 import java.io.IOException;
 
@@ -43,8 +43,11 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
             myApiService = builder.build();
         }
 
+        //context = params[0].first;
+        // String name = params[0].second;
+
         try {
-            return myApiService.putJoke(new MyBean()).execute().getJoke();
+            return myApiService.sayHi().execute().getData();
         } catch (IOException e) {
             return e.getMessage();
         }

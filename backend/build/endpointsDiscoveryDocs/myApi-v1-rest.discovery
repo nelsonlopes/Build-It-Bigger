@@ -20,14 +20,10 @@
  "id": "myApi:v1",
  "kind": "discovery#restDescription",
  "methods": {
-  "putJoke": {
+  "sayHi": {
    "httpMethod": "POST",
-   "id": "myApi.putJoke",
-   "path": "putJoke",
-   "request": {
-    "$ref": "MyBean",
-    "parameterName": "resource"
-   },
+   "id": "myApi.sayHi",
+   "path": "sayHi",
    "response": {
     "$ref": "MyBean"
    },
@@ -90,7 +86,7 @@
   "MyBean": {
    "id": "MyBean",
    "properties": {
-    "joke": {
+    "data": {
      "type": "string"
     }
    },

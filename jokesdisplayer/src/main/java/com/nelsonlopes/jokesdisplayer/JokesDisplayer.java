@@ -3,6 +3,7 @@ package com.nelsonlopes.jokesdisplayer;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class JokesDisplayer extends AppCompatActivity {
@@ -11,6 +12,8 @@ public class JokesDisplayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jokes_displayer);
+
+        TextView joke_tv = findViewById(R.id.tv_joke);
 
         Intent intent = getIntent();
         if (intent == null) {
@@ -21,7 +24,7 @@ public class JokesDisplayer extends AppCompatActivity {
             String joke = intent.getStringExtra(getString(R.string.intent_joke));
 
             if (!joke.equals("")) {
-                Toast.makeText(this, joke, Toast.LENGTH_SHORT).show();
+                joke_tv.setText(joke);
             } else {
                 closeOnError();
             }
