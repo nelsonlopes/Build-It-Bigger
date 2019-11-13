@@ -1,21 +1,21 @@
-nov 12, 2019 9:01:12 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+nov 13, 2019 8:48:53 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\ND\projects\Build_It_Bigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-2019-11-12 21:01:12.848:INFO::main: Logging initialized @799ms to org.eclipse.jetty.util.log.StdErrLog
-2019-11-12 21:01:12.922:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
-nov 12, 2019 9:01:13 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+2019-11-13 08:48:53.809:INFO::main: Logging initialized @968ms to org.eclipse.jetty.util.log.StdErrLog
+2019-11-13 08:48:53.903:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+nov 13, 2019 8:48:54 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (C:\ND\projects\Build_It_Bigger\backend) is not equal to your 
 web application root (C:\ND\projects\Build_It_Bigger\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-2019-11-12 21:01:13.643:INFO:oejs.Server:main: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_202-release-1483-b03
-2019-11-12 21:01:15.070:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@3f4faf53{/,file:///C:/ND/projects/Build_It_Bigger/backend/build/exploded-backend/,AVAILABLE}{C:\ND\projects\Build_It_Bigger\backend\build\exploded-backend}
-2019-11-12 21:01:15.071:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
-2019-11-12 21:01:15.071:INFO:oejs.session:main: node0 Scavenging disabled
-2019-11-12 21:01:15.095:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@67784306{HTTP/1.1,[http/1.1]}{localhost:8080}
-2019-11-12 21:01:15.096:INFO:oejs.Server:main: Started @3047ms
-nov 12, 2019 9:01:15 PM com.google.appengine.tools.development.AbstractModule startup
+2019-11-13 08:48:54.544:INFO:oejs.Server:main: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_202-release-1483-b03
+2019-11-13 08:48:56.402:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@3f4faf53{/,file:///C:/ND/projects/Build_It_Bigger/backend/build/exploded-backend/,AVAILABLE}{C:\ND\projects\Build_It_Bigger\backend\build\exploded-backend}
+2019-11-13 08:48:56.402:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-11-13 08:48:56.402:INFO:oejs.session:main: node0 Scavenging disabled
+2019-11-13 08:48:56.434:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@67784306{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-11-13 08:48:56.434:INFO:oejs.Server:main: Started @3597ms
+nov 13, 2019 8:48:56 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-nov 12, 2019 9:01:15 PM com.google.appengine.tools.development.AbstractModule startup
+nov 13, 2019 8:48:56 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-nov 12, 2019 9:01:15 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+nov 13, 2019 8:48:56 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running

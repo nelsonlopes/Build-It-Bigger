@@ -17,9 +17,14 @@ public class JokesDisplayer extends AppCompatActivity {
             closeOnError();
         }
 
-        String joke = intent.getStringExtra(getString(R.string.intent_joke));
-        if (!joke.equals("")) {
-            Toast.makeText(this, joke, Toast.LENGTH_SHORT).show();
+        if (intent.hasExtra(getString(R.string.intent_joke))) {
+            String joke = intent.getStringExtra(getString(R.string.intent_joke));
+
+            if (!joke.equals("")) {
+                Toast.makeText(this, joke, Toast.LENGTH_SHORT).show();
+            } else {
+                closeOnError();
+            }
         } else {
             closeOnError();
         }
